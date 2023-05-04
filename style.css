@@ -109,6 +109,8 @@ main {
 
 form {
   background: var(--bg-primary);
+
+  padding: 7.8rem 3.9rem 6.5rem 4.3rem;
 }
 
 .stars {
@@ -117,8 +119,40 @@ form {
 
 button {
   background: var(--bg-secundary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  height: 4.5rem;
+
+  padding: 10.5px 1.6rem;
+  margin-top: 10rem;
+
+  color: var(--fc-secundary);
+  font-weight: 700;
+  font-size: var(--fs-button);
+  line-height: 2.4rem;
+  text-transform: capitalize;
+
+  border: 1.5px solid #312D64;
+  border-radius: 1.6rem;
 }
 
 footer {
   background: var(--bg-secundary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.6rem;
+
+  color: var(--fc-secundary);
+  font-size: var(--fs-paragraph-primary);
+  font-weight: 600;
+  line-height: 2.4rem;
+
+  height: 7.8rem;
 }
