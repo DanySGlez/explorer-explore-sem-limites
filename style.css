@@ -113,6 +113,87 @@ form {
   padding: 7.8rem 3.9rem 6.5rem 4.3rem;
 }
 
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset legend {
+  font-size: var(--fs-heading);
+  font-weight: 900;
+  line-height: 4rem;
+  color: var(--fc-heading);
+
+  width: 100%;
+
+  margin-bottom: 4.3rem;
+}
+
+.input-wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input, 
+.input-wrapper textarea {
+  border: 1.5px solid #312D64;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.input-wrapper input {
+  margin-bottom: 2.4rem;
+
+  height: 4.8rem;
+}
+
+.input-wrapper input::placeholder {
+  color: var(--fc-primary);
+
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+
+  padding: 1.6rem 1.6rem 1.6rem 5rem;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: 1.6rem;
+  left: 1.4rem;
+}
+
+.input-wrapper textarea {
+  height: 5rem;
+
+  width: 100%;
+
+
+  padding: 16px 16px 16px 6px;
+
+  align-items: flex-start;
+
+  color: var(--fc-primary);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+
+  resize: none;
+}
+
+input:invalid {
+  border: 1.5px solid red;
+}
+
 .stars {
   display: none;
 }
