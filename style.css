@@ -30,6 +30,7 @@ body {
 
 .page {
   width: 43rem;
+  /* width: clamp(43rem, 30rem + 60vw, 144rem);*/
   
   margin: 0 auto;
 
@@ -37,8 +38,13 @@ body {
   align-items: center;
 }
 
-img {
+.logo-small {
   max-width: 100%;
+  margin-bottom: 1.7rem; 
+}
+
+.logo-big {
+  display: none;
 }
 
 header {
@@ -50,7 +56,9 @@ header {
 }
 
 header h1 {
-  margin-top: 1.7rem; 
+  margin: 0 auto;
+  width: fit-content;
+
 
   font-weight: 900;
   font-size: var(--fs-heading);
@@ -60,7 +68,9 @@ header h1 {
 }
 
 header p {
-  margin-top: 5px;
+  padding-top: 5px;
+  margin: 0 auto;
+  width: fit-content;
 }
 
 .arrow {
@@ -236,4 +246,55 @@ footer {
   line-height: 2.4rem;
 
   height: 7.8rem;
+}
+
+@media (min-width: 900px) {
+  :root {
+    font-size: 62.5%;
+    --fs-heading: 5.8rem;
+    --fs-heading-secundary: 3.5rem;
+    --fs-heading-form: 4.2rem;
+    --fs-paragraph-primary: 3.2rem;
+    --fs-paragraph-secundary: 1.9rem;
+    --fs-paragraph-form: 1.6rem;
+    --fs-button: 1.4rem;
+  }
+
+  .page {
+    width: 144rem;
+
+  }
+
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2.8rem;
+    justify-content: space-between;
+
+    padding: 0 3rem 0 10.9rem;
+  }
+
+  .logo-big {
+    display: flex;
+
+    max-width: 100%;
+
+    margin-bottom: 10.3rem; 
+  }
+
+  .logo-small {
+    display: none;
+  }
+
+  .text {
+    
+  }
+
+  header h1 {
+    margin: 31.2rem 0 0.8rem;
+  }
+
+  header p {
+
+  }
 }
